@@ -134,7 +134,7 @@ class Gallery_m extends MY_Model {
 			'folder_id'			=> $input['folder_id'],
 			'description'		=> $input['description'],
 			'enable_comments'	=> $input['enable_comments'],
-			'thumbnail_id'		=> ! empty($input['gallery_thumbnail']) ? (int) $input['gallery_thumbnail'] : NULL,
+			'thumbnail_id'		=> ! empty($input['gallery_thumbnail']) ? $input['gallery_thumbnail'] : NULL,
 			'published'			=> $input['published'],
 			'updated_on'		=> time(),
 			'css'				=> $input['css'],
